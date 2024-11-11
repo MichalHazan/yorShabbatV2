@@ -1,70 +1,209 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import React, { useEffect, useState } from "react";
+import { fetchUserLocation } from "@/utils/locationUtils";
+import { calculateShabbatTimes } from "@/utils/shabbatCalc";
+import { ShabbatTime } from "@/utils/types";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import {
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  Text,
+  Dimensions,
+  ImageBackground,
+} from "react-native";
+import {
+  Button,
+  Menu,
+  Divider,
+  PaperProvider,
+  IconButton,
+} from "react-native-paper";
+import ShabbatDetailsCard from "@/components/ShabbatDetailsCard";
+import TitleCard from "@/components/TitleCard";
+import AlarmModal from "@/components/AlarmModal";
+import EventModal from "@/components/EventModal";
+import LanguageModal from "@/components/LanguageModal";
+import { Audio } from "expo-av";
+import Parasha from "@/components/Parasha";
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+const SHABBAT_TIMES_KEY = "shabbatTimes";
+const SHABBAT_TIMES_EXPIRY = 2; // 2 days
 
-export default function HomeScreen() {
+const HomeScreen = () => {
+  const [shabbatDetails, setShabbatDetails] = useState<ShabbatTime | null>(null);
+  const [activeComponent, setActiveComponent] = useState<"Parasha" | "TitleCard">("Parasha");
+  const [visible, setVisible] = useState(false);
+  const [showAlarmModal, setShowAlarmModal] = useState(false);
+  const [showEventModal, setShowEventModal] = useState(false);
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
+
+  useEffect(() => {
+    const fetchShabbatTimes = async () => {
+      try {
+        const cachedShabbatTimes = await AsyncStorage.getItem(SHABBAT_TIMES_KEY);
+
+        if (cachedShabbatTimes) {
+          const { data, timestamp } = JSON.parse(cachedShabbatTimes);
+          const now = new Date().getTime();
+          const expirationTime = timestamp + SHABBAT_TIMES_EXPIRY * 24 * 60 * 60 * 1000;
+          if (now < expirationTime) {
+            setShabbatDetails(
+              data.find(
+                (time: { date: string | number | Date }) =>
+                  new Date(time.date) >= new Date()
+              )
+            );
+            return;
+          }
+        }
+
+        const { latitude, longitude, city } = await fetchUserLocation();
+        const shabbatTimes = await calculateShabbatTimes(latitude, longitude, city);
+        const nextShabbat = shabbatTimes?.find(
+          (time: { date: string | number | Date }) =>
+            new Date(time.date) >= new Date()
+        ) || null;
+        setShabbatDetails(nextShabbat);
+
+        await AsyncStorage.setItem(
+          SHABBAT_TIMES_KEY,
+          JSON.stringify({
+            data: shabbatTimes,
+            timestamp: new Date().getTime(),
+          })
+        );
+      } catch (error) {
+        console.error("Error fetching Shabbat times:", error);
+      }
+    };
+
+    fetchShabbatTimes();
+  }, []);
+
+  const handleMenuItemPress = (option: string) => {
+    setVisible(false);
+    switch (option) {
+      case "Add Alert":
+        setShowAlarmModal(true);
+        break;
+      case "Add Event":
+        setShowEventModal(true);
+        break;
+      case "Change Language":
+        setShowLanguageModal(true);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+    <PaperProvider>
+      <ImageBackground 
+        source={require('@/assets/images/bricks.jpeg')}
+        style={styles.backgroundImage}
+        resizeMode="cover"
+      >
+      <View style={styles.container}>
+        {/* Menu positioned absolutely in top-right corner */}
+        <View style={styles.menuContainer}>
+          <Menu
+            visible={visible}
+            onDismiss={() => setVisible(false)}
+            anchor={
+              <IconButton
+                icon="menu"
+                size={30}
+                onPress={() => setVisible(true)}
+              />
+            }
+          >
+            <Menu.Item
+              onPress={() => handleMenuItemPress("Add Alert")}
+              title="Add Alert"
+            />
+            <Menu.Item
+              onPress={() => handleMenuItemPress("Add Event")}
+              title="Add Event"
+            />
+            <Menu.Item
+              onPress={() => handleMenuItemPress("Change Language")}
+              title="Change Language"
+            />
+          </Menu>
+        </View>
+
+        {/* Main content */}
+        <View style={styles.contentContainer}>
+          <View style={styles.leftColumn}>
+            {activeComponent === "Parasha" ? (
+              <Parasha shabbatDetails={shabbatDetails} />
+            ) : (
+              <TitleCard />
+            )}
+            <Button
+              icon="arrow-left-right-bold"
+              onPress={() =>
+                setActiveComponent(
+                  activeComponent === "Parasha" ? "TitleCard" : "Parasha"
+                )
+              }
+              children={undefined}
+            ></Button>
+          </View>
+          <View style={styles.rightColumn}>
+            <ShabbatDetailsCard shabbatDetails={shabbatDetails} />
+          </View>
+        </View>
+
+        {/* Modals */}
+        <AlarmModal
+          visible={showAlarmModal}
+          onClose={() => setShowAlarmModal(false)}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+        <EventModal
+          visible={showEventModal}
+          onClose={() => setShowEventModal(false)}
+        />
+        <LanguageModal
+          visible={showLanguageModal}
+          onClose={() => setShowLanguageModal(false)}
+        />
+      </View>
+      </ImageBackground>
+    </PaperProvider>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  titleContainer: {
+  backgroundImage: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+  },
+  container: {
+    flex: 1,
+  },
+  menuContainer: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    zIndex: 1,
+    padding: 8,
+  },
+  contentContainer: {
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  leftColumn: {
+    flex: 1,
+    padding: 16,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  rightColumn: {
+    flex: 1,
+    padding: 16,
   },
 });
+
+export default HomeScreen;

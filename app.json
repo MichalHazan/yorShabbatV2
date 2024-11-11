@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "yorShabbatV2",
-    "slug": "yorShabbatV2",
+    "slug": "yor-shabbat",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,18 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yorShabbatV2",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "bundler": "metro",
@@ -27,10 +32,23 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-av"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9153dd9a-1bbb-471f-a7a5-62cd15ea3703"
+      }
+    },
+    "owner": "yorshabbat",
+    "updates": {
+      "url": "https://u.expo.dev/9153dd9a-1bbb-471f-a7a5-62cd15ea3703"
     }
   }
 }
