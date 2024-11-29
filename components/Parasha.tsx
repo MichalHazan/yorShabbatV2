@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { ShabbatTime } from "@/utils/types";
+import { LanguageContext } from "@/context/LanguageContext";
 interface ShabbatDetailsCardProps {
   shabbatDetails: ShabbatTime | null;
 }
 
 const Parasha = ({ shabbatDetails }: ShabbatDetailsCardProps) => {
-  
-
+  const { language } = useContext(LanguageContext);
   return (
     <View style={styles.shabbatContainer}>
       {shabbatDetails && (
         <>
-         <View style={styles.shabbatTimes}>
-           
-            <Text style={[{ fontFamily: 'ShmulikCLMMedium' }, styles.title]}>
-                {"פרשת השבוע"}
+          <View style={styles.shabbatTimes}>
+            <Text style={[{ fontFamily: "ShmulikCLMMedium" }, styles.title]}>
+              {language === "en" ? "Parasha" : "פרשת השבוע"}
             </Text>
-            <Text style={[{ fontFamily: 'ShmulikCLMMedium' }]}>
-                {shabbatDetails.torah_hw}
+            <Text style={[{ fontFamily: "ShmulikCLMMedium" }, styles.content]}>
+              {language === "en"
+                ? shabbatDetails.torah_en
+                : shabbatDetails.torah_hw}
             </Text>
           </View>
         </>
@@ -39,16 +40,13 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   title: {
-    fontSize: 24,
+    fontSize: 36,
     textAlign: "center",
     marginBottom: 15,
   },
-  content:{
-    fontSize: 18,
-    lineHeight: 1.6,
-    textAlign: "center"
-  }
- 
+  content: {
+    fontSize: 24,
+  },
 });
 
 export default Parasha;

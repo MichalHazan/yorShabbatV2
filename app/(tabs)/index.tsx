@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { fetchUserLocation } from "@/utils/locationUtils";
 import { calculateShabbatTimes } from "@/utils/shabbatCalc";
 import { ShabbatTime } from "@/utils/types";
@@ -25,27 +25,81 @@ import EventModal from "@/components/EventModal";
 import LanguageModal from "@/components/LanguageModal";
 import { Audio } from "expo-av";
 import Parasha from "@/components/Parasha";
+import PopupReminder from "@/components/PopupReminder";
+import { useEvents } from "@/context/EventsContext";
+import { LanguageContext } from "@/context/LanguageContext";
+import {
+  BackgroundOption,
+  BackgroundModal,
+  backgroundOptions,
+  BACKGROUND_KEY,
+  CUSTOM_IMAGE_KEY,
+} from "@/components/BackgroundModal";
 
 const SHABBAT_TIMES_KEY = "shabbatTimes";
 const SHABBAT_TIMES_EXPIRY = 2; // 2 days
+// Define sounds with proper require statements
+const sounds = [
+  { id: 1, name: "Sound 1", value: require("@/assets/sounds/sound1.mp3") },
+  { id: 2, name: "Sound 2", value: require("@/assets/sounds/sound2.mp3") },
+  { id: 3, name: "Sound 3", value: require("@/assets/sounds/sound3.mp3") },
+  { id: 4, name: "Sound 4", value: require("@/assets/sounds/sound4.mp3") },
+  { id: 5, name: "Sound 5", value: require("@/assets/sounds/sound5.mp3") },
+  { id: 6, name: "Sound 6", value: require("@/assets/sounds/sound6.mp3") },
+  { id: 7, name: "Sound 7", value: require("@/assets/sounds/sound7.mp3") },
+];
 
 const HomeScreen = () => {
-  const [shabbatDetails, setShabbatDetails] = useState<ShabbatTime | null>(null);
-  const [activeComponent, setActiveComponent] = useState<"Parasha" | "TitleCard">("Parasha");
+  const { language, setLanguage } = useContext(LanguageContext);
+  const [shabbatDetails, setShabbatDetails] = useState<ShabbatTime | null>(
+    null
+  );
+  const [activeComponent, setActiveComponent] = useState<
+    "Parasha" | "TitleCard"
+  >("Parasha");
   const [visible, setVisible] = useState(false);
   const [showAlarmModal, setShowAlarmModal] = useState(false);
   const [showEventModal, setShowEventModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
+  const { events } = useEvents();
+  const [todayEvent, setTodayEvent] = useState("");
+  const [selectedBackground, setSelectedBackground] =
+    useState<BackgroundOption>(backgroundOptions[0]);
+  const [showBackgroundModal, setShowBackgroundModal] = useState(false);
 
+  //background
+  const handleBackgroundSelect = async (background: BackgroundOption) => {
+    try {
+      await AsyncStorage.setItem(BACKGROUND_KEY, JSON.stringify(background));
+      setSelectedBackground(background);
+    } catch (error) {
+      console.error("Error saving background preference:", error);
+    }
+  };
+
+  const clearStorage = async () => {
+    try {
+      await AsyncStorage.removeItem("events");
+      console.log(`${"events"} successfully removed!`);
+    } catch (e) {
+      console.error(`Error removing ${"events"}:`, e);
+    }
+  };
+  const handleLanguageChange = () => {
+    setLanguage(language === "en" ? "he" : "en");
+  };
   useEffect(() => {
     const fetchShabbatTimes = async () => {
       try {
-        const cachedShabbatTimes = await AsyncStorage.getItem(SHABBAT_TIMES_KEY);
+        const cachedShabbatTimes = await AsyncStorage.getItem(
+          SHABBAT_TIMES_KEY
+        );
 
         if (cachedShabbatTimes) {
           const { data, timestamp } = JSON.parse(cachedShabbatTimes);
           const now = new Date().getTime();
-          const expirationTime = timestamp + SHABBAT_TIMES_EXPIRY * 24 * 60 * 60 * 1000;
+          const expirationTime =
+            timestamp + SHABBAT_TIMES_EXPIRY * 24 * 60 * 60 * 1000;
           if (now < expirationTime) {
             setShabbatDetails(
               data.find(
@@ -58,13 +112,29 @@ const HomeScreen = () => {
         }
 
         const { latitude, longitude, city } = await fetchUserLocation();
-        const shabbatTimes = await calculateShabbatTimes(latitude, longitude, city);
-        const nextShabbat = shabbatTimes?.find(
-          (time: { date: string | number | Date }) =>
-            new Date(time.date) >= new Date()
-        ) || null;
-        setShabbatDetails(nextShabbat);
+        const shabbatTimes = await calculateShabbatTimes(
+          latitude,
+          longitude,
+          city
+        );
+        const today = new Date();
+        const todayDayOfWeek = today.getDay(); // 5 = Friday, 6 = Saturday
 
+        // Find the next Shabbat, including today if it's Friday or Saturday
+        const nextShabbat =
+          shabbatTimes?.find((time: { date: string | number | Date }) => {
+            const shabbatDate = new Date(time.date);
+
+            // Check if the Shabbat date is today or in the future
+            if (shabbatDate.toDateString() === today.toDateString()) {
+              // Keep the current Shabbat if today is Friday or Saturday
+              return todayDayOfWeek === 5 || todayDayOfWeek === 6;
+            }
+
+            // Otherwise, find the next Shabbat in the future
+            return shabbatDate >= today;
+          }) || null;
+        setShabbatDetails(nextShabbat);
         await AsyncStorage.setItem(
           SHABBAT_TIMES_KEY,
           JSON.stringify({
@@ -79,6 +149,31 @@ const HomeScreen = () => {
 
     fetchShabbatTimes();
   }, []);
+  //events check
+  useEffect(() => {
+    const now = new Date();
+    const todaysEvents = []; // Array to collect today's event titles
+
+    if (events.length > 0) {
+      for (let i = 0; i < events.length; i++) {
+        const event = events[i];
+        const eventTime = event.time ? new Date(event.time) : null;
+
+        if (
+          eventTime &&
+          now.getDate() === eventTime.getDate() &&
+          now.getMonth() === eventTime.getMonth()
+        ) {
+          todaysEvents.push(event.title); // Add event title to the array
+        }
+      }
+
+      // If there are events today, join them; otherwise, set an empty string
+      setTodayEvent(todaysEvents.length > 0 ? todaysEvents.join(", ") : "");
+    } else {
+      setTodayEvent(""); // Ensure it's empty if there are no events at all
+    }
+  }, [events]);
 
   const handleMenuItemPress = (option: string) => {
     setVisible(false);
@@ -90,7 +185,7 @@ const HomeScreen = () => {
         setShowEventModal(true);
         break;
       case "Change Language":
-        setShowLanguageModal(true);
+        handleLanguageChange();
         break;
       default:
         break;
@@ -99,77 +194,110 @@ const HomeScreen = () => {
 
   return (
     <PaperProvider>
-      <ImageBackground 
-        source={require('@/assets/images/bricks.jpeg')}
+      <ImageBackground
+        source={
+          selectedBackground.type === "custom"
+            ? { uri: selectedBackground.value }
+            : selectedBackground.value
+        }
         style={styles.backgroundImage}
         resizeMode="cover"
       >
-      <View style={styles.container}>
-        {/* Menu positioned absolutely in top-right corner */}
-        <View style={styles.menuContainer}>
-          <Menu
-            visible={visible}
-            onDismiss={() => setVisible(false)}
-            anchor={
-              <IconButton
-                icon="menu"
-                size={30}
-                onPress={() => setVisible(true)}
-              />
-            }
-          >
-            <Menu.Item
-              onPress={() => handleMenuItemPress("Add Alert")}
-              title="Add Alert"
-            />
-            <Menu.Item
-              onPress={() => handleMenuItemPress("Add Event")}
-              title="Add Event"
-            />
-            <Menu.Item
-              onPress={() => handleMenuItemPress("Change Language")}
-              title="Change Language"
-            />
-          </Menu>
-        </View>
-
-        {/* Main content */}
-        <View style={styles.contentContainer}>
-          <View style={styles.leftColumn}>
-            {activeComponent === "Parasha" ? (
-              <Parasha shabbatDetails={shabbatDetails} />
-            ) : (
-              <TitleCard />
-            )}
-            <Button
-              icon="arrow-left-right-bold"
-              onPress={() =>
-                setActiveComponent(
-                  activeComponent === "Parasha" ? "TitleCard" : "Parasha"
-                )
+        <View style={styles.container}>
+          {/* PopupReminder to handle scheduled pop-ups and sound */}
+          <View style={{ height: 0, overflow: "hidden" }}>
+            <PopupReminder />
+          </View>
+          {/* Menu positioned absolutely in top-right corner */}
+          <View style={styles.menuContainer}>
+            <Menu
+              visible={visible}
+              onDismiss={() => setVisible(false)}
+              anchor={
+                <IconButton
+                  icon="menu"
+                  size={30}
+                  onPress={() => setVisible(true)}
+                />
               }
-              children={undefined}
-            ></Button>
+            >
+              <Menu.Item
+                onPress={() => handleMenuItemPress("Add Alert")}
+                title={language === "en" ? "Add alert" : "הוסף התראה"}
+              />
+              <Menu.Item
+                onPress={() => handleMenuItemPress("Add Event")}
+                title={language === "en" ? "Add Event" : "הוסף אירוע"}
+              />
+              <Menu.Item
+                onPress={() => handleMenuItemPress("Change Language")}
+                title={language === "en" ? "Hebrew" : "אנגלית"}
+              />
+              <Menu.Item
+                onPress={() => {
+                  setVisible(false);
+                  setShowBackgroundModal(true);
+                }}
+                title={language === "en" ? "Change Background" : "שנה רקע"}
+              />
+            </Menu>
           </View>
-          <View style={styles.rightColumn}>
-            <ShabbatDetailsCard shabbatDetails={shabbatDetails} />
-          </View>
-        </View>
 
-        {/* Modals */}
-        <AlarmModal
-          visible={showAlarmModal}
-          onClose={() => setShowAlarmModal(false)}
-        />
-        <EventModal
-          visible={showEventModal}
-          onClose={() => setShowEventModal(false)}
-        />
-        <LanguageModal
-          visible={showLanguageModal}
-          onClose={() => setShowLanguageModal(false)}
-        />
-      </View>
+          {/* Main content */}
+          <View style={styles.contentContainer}>
+            <View style={styles.leftColumn}>
+              {activeComponent === "Parasha" ? (
+                <Parasha shabbatDetails={shabbatDetails} />
+              ) : (
+                <TitleCard />
+              )}
+              <Button
+                icon="arrow-left-right-bold"
+                onPress={() =>
+                  setActiveComponent(
+                    activeComponent === "Parasha" ? "TitleCard" : "Parasha"
+                  )
+                }
+                children={undefined}
+              ></Button>
+            </View>
+            <View style={styles.rightColumn}>
+              <ShabbatDetailsCard
+                shabbatDetails={shabbatDetails}
+                selectedBackground={selectedBackground}
+              />
+            </View>
+          </View>
+          {/* Event */}
+          <View style={styles.eventContainer}>
+            <Text
+              style={[styles.eventText, { fontFamily: "ShmulikCLMMedium" }]}
+            >
+              {todayEvent}
+            </Text>
+          </View>
+
+          {/* Modals */}
+          <AlarmModal
+            visible={showAlarmModal}
+            onClose={() => setShowAlarmModal(false)}
+            shabbatDetails={shabbatDetails}
+          />
+          <EventModal
+            visible={showEventModal}
+            onClose={() => setShowEventModal(false)}
+          />
+          <LanguageModal
+            visible={showLanguageModal}
+            onClose={() => setShowLanguageModal(false)}
+          />
+          <BackgroundModal
+            visible={showBackgroundModal}
+            onClose={() => setShowBackgroundModal(false)}
+            onSelect={handleBackgroundSelect}
+            language={language}
+          />
+        </View>
       </ImageBackground>
     </PaperProvider>
   );
@@ -178,14 +306,14 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
   },
   container: {
     flex: 1,
   },
   menuContainer: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     right: 0,
     zIndex: 1,
@@ -193,8 +321,8 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
   leftColumn: {
     flex: 1,
@@ -203,6 +331,16 @@ const styles = StyleSheet.create({
   rightColumn: {
     flex: 1,
     padding: 16,
+  },
+  eventContainer: {
+    position: "absolute",
+    top: 0,
+    right: "40%",
+    zIndex: 1,
+    padding: 8,
+  },
+  eventText: {
+    fontSize: 20,
   },
 });
 

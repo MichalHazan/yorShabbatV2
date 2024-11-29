@@ -7,3 +7,9 @@ export interface ShabbatTime {
   torah_en: string;
   torah_hw: string;
 }
+
+export interface Event  {
+  title: string;
+  time: Date ;
+  sound: any;
+};

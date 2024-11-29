@@ -12,11 +12,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "runtimeVersion": {
         "policy": "appVersion"
-      }
+      },
+      "bundleIdentifier": "com.yorShabbatV2"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,17 +26,15 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.yorShabbatV2",
-      "runtimeVersion": "1.0.0"
+      "runtimeVersion": "1.0.0",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      "expo-av"
-    ],
+    "plugins": ["expo-router", "expo-av", "expo-notifications"],
     "experiments": {
       "typedRoutes": true
     },

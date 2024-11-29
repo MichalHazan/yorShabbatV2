@@ -86,7 +86,7 @@ const TitleCard = () => {
       </TouchableOpacity>
       {isEditing ? (
         <TextInput
-          style={styles.titleInput}
+          style={[styles.titleInput, { fontFamily: "ShmulikCLMMedium" },]}
           value={title}
           onChangeText={handleTitleChange}
           onEndEditing={handleEndEditing}
@@ -94,7 +94,7 @@ const TitleCard = () => {
         />
       ) : (
         <TouchableOpacity onPress={handleTitlePress}>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={[styles.title, { fontFamily: "ShmulikCLMMedium" },]}>{title}</Text>
         </TouchableOpacity>
       )}
     </View>
@@ -108,18 +108,19 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   circleImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
+    width: 150,
+    height: 150,
+    borderRadius: 75,
   },
   title: {
-    marginTop: 10,
-    fontSize: 18,
+    marginTop: 11,
+    fontSize: 17,
     fontWeight: "bold",
+    textAlign: "center",
   },
   titleInput: {
     marginTop: 10,
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "bold",
     borderBottomWidth: 1,
     borderBottomColor: "#000",
