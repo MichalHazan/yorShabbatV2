@@ -3,6 +3,7 @@ import { fetchUserLocation } from "@/utils/locationUtils";
 import { calculateShabbatTimes } from "@/utils/shabbatCalc";
 import { ShabbatTime } from "@/utils/types";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import NetInfo from "@react-native-community/netinfo";
 import {
   View,
   StyleSheet,
@@ -38,16 +39,9 @@ import {
 
 const SHABBAT_TIMES_KEY = "shabbatTimes";
 const SHABBAT_TIMES_EXPIRY = 2; // 2 days
+const LOCATION_KEY = "location";
 // Define sounds with proper require statements
-const sounds = [
-  { id: 1, name: "Sound 1", value: require("@/assets/sounds/sound1.mp3") },
-  { id: 2, name: "Sound 2", value: require("@/assets/sounds/sound2.mp3") },
-  { id: 3, name: "Sound 3", value: require("@/assets/sounds/sound3.mp3") },
-  { id: 4, name: "Sound 4", value: require("@/assets/sounds/sound4.mp3") },
-  { id: 5, name: "Sound 5", value: require("@/assets/sounds/sound5.mp3") },
-  { id: 6, name: "Sound 6", value: require("@/assets/sounds/sound6.mp3") },
-  { id: 7, name: "Sound 7", value: require("@/assets/sounds/sound7.mp3") },
-];
+
 
 const HomeScreen = () => {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -66,6 +60,10 @@ const HomeScreen = () => {
   const [selectedBackground, setSelectedBackground] =
     useState<BackgroundOption>(backgroundOptions[0]);
   const [showBackgroundModal, setShowBackgroundModal] = useState(false);
+  const [locationFetched, setLocationFetched] = useState(false); // Track if location is fetched
+  const [long, setLong] = useState(0);
+  const [lat, setLat] = useState(0);
+  const [cityN, setCityN] = useState("");
 
   //background
   const handleBackgroundSelect = async (background: BackgroundOption) => {
@@ -77,12 +75,12 @@ const HomeScreen = () => {
     }
   };
 
-  const clearStorage = async () => {
+  const clearStorage = async (key) => {
     try {
-      await AsyncStorage.removeItem("events");
-      console.log(`${"events"} successfully removed!`);
+      await AsyncStorage.removeItem(key);
+      console.log(`${key} successfully removed!`);
     } catch (e) {
-      console.error(`Error removing ${"events"}:`, e);
+      console.error(`Error removing ${key}:`, e);
     }
   };
   const handleLanguageChange = () => {
@@ -90,36 +88,73 @@ const HomeScreen = () => {
   };
   useEffect(() => {
     const fetchShabbatTimes = async () => {
+      setLocationFetched(false);
       try {
+        const today = new Date();
+        const todayDayOfWeek = today.getDay(); // 5 = Friday, 6 = Saturday
         const cachedShabbatTimes = await AsyncStorage.getItem(
           SHABBAT_TIMES_KEY
         );
+        // Retrieve cached location to check its validity
+        const cachedLocation = await AsyncStorage.getItem(LOCATION_KEY);
+        // // Check network status
+        // const netInfo = await NetInfo.fetch();
+        // if (!netInfo.isConnected) {
+        //   // User is offline
+        if (cachedLocation) {
+          const {
+            data: { latitude, longitude },
+          } = JSON.parse(cachedLocation);
 
-        if (cachedShabbatTimes) {
-          const { data, timestamp } = JSON.parse(cachedShabbatTimes);
-          const now = new Date().getTime();
-          const expirationTime =
-            timestamp + SHABBAT_TIMES_EXPIRY * 24 * 60 * 60 * 1000;
-          if (now < expirationTime) {
-            setShabbatDetails(
-              data.find(
-                (time: { date: string | number | Date }) =>
-                  new Date(time.date) >= new Date()
-              )
-            );
-            return;
+          // Skip using cached data if latitude or longitude is invalid
+          if (latitude <= 1 || longitude <= 1) {
+            console.log("Invalid cached location data. Clearing storage...");
+            
+            await clearStorage(SHABBAT_TIMES_KEY);
+          } else if (cachedShabbatTimes) {
+            const { data, timestamp } = JSON.parse(cachedShabbatTimes);
+            const now = new Date().getTime();
+            const expirationTime =
+              timestamp + SHABBAT_TIMES_EXPIRY * 24 * 60 * 60 * 1000;
+            if (now < expirationTime) {
+              setShabbatDetails(
+                data.find((time: { date: string | number | Date }) => {
+                  const shabbatDate = new Date(time.date);
+
+                  // Check if the Shabbat date is today or in the future
+                  if (shabbatDate.toDateString() === today.toDateString()) {
+                    // Keep the current Shabbat if today is Friday or Saturday
+                    return todayDayOfWeek === 5 || todayDayOfWeek === 6;
+                  }
+
+                  // Otherwise, find the next Shabbat in the future
+                  return shabbatDate >= today;
+                })
+              );
+              return;
+            }
           }
         }
 
-        const { latitude, longitude, city } = await fetchUserLocation();
-        const shabbatTimes = await calculateShabbatTimes(
-          latitude,
-          longitude,
-          city
-        );
-        const today = new Date();
-        const todayDayOfWeek = today.getDay(); // 5 = Friday, 6 = Saturday
-
+        // }
+        // Only fetch location once
+        if (!locationFetched || lat < 1 || long < 1) {
+          console.log("fetching location: ", locationFetched, " lat : ", lat, "long: ", long)
+          clearStorage(SHABBAT_TIMES_KEY);
+          setLocationFetched(true); // Set flag to true once location is fetched
+          const { latitude, longitude, city } = await fetchUserLocation();
+          setLat(latitude);
+          setLong(longitude);
+          setCityN(city);
+          await AsyncStorage.setItem(
+            LOCATION_KEY,
+            JSON.stringify({
+              data: { latitude, longitude },
+              timestamp: new Date().getTime(),
+            })
+          );
+        }
+        const shabbatTimes = await calculateShabbatTimes(lat, long, cityN);
         // Find the next Shabbat, including today if it's Friday or Saturday
         const nextShabbat =
           shabbatTimes?.find((time: { date: string | number | Date }) => {
@@ -152,7 +187,7 @@ const HomeScreen = () => {
   //events check
   useEffect(() => {
     const now = new Date();
-    const todaysEvents = []; // Array to collect today's event titles
+    const todaysEvents: string[] = []; // Explicitly define the array type // Array to collect today's event titles
 
     if (events.length > 0) {
       for (let i = 0; i < events.length; i++) {

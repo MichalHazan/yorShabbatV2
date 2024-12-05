@@ -15,19 +15,17 @@ export const adjustMinutes = (date: Date, minutes: number): Date => {
  * @param string - Date to format.
  * @returns - Formatted date string.
  */
-export const formatDate = (dateString : string): string => {
+export const formatDate = (dateString: string): string => {
   const date = new Date(dateString);
-  const day = date.getDate().toString().padStart(2, '0');
-  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, "0");
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
   const year = date.getFullYear();
   return `${day}.${month}.${year}`;
 };
 
-
 export const format = (date: Date): string => {
-  return date.toISOString().split('T')[0];
+  return date.toISOString().split("T")[0];
 };
-
 
 export const getNextYearFridaysAndSaturdays = () => {
   const fridays: Date[] = [];
@@ -35,7 +33,17 @@ export const getNextYearFridaysAndSaturdays = () => {
   const currentDate = new Date();
 
   // Set date to the upcoming Friday
-  currentDate.setDate(currentDate.getDate() + ((5 - currentDate.getDay() + 7) % 7));
+
+  // Adjust the date based on the day of the week
+  if (currentDate.getDay() === 6) {
+    // If today is Saturday, set the date to yesterday (Friday)
+    currentDate.setDate(currentDate.getDate() - 1);
+  } else {
+    // If today is not Saturday, set the date to the upcoming Friday
+    currentDate.setDate(
+      currentDate.getDate() + ((5 - currentDate.getDay() + 7) % 7)
+    );
+  }
   // Loop for the next 52 Fridays and Saturdays
   for (let i = 0; i < 216; i++) {
     const friday = new Date(currentDate);

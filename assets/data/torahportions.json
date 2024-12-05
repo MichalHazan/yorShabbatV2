@@ -1,25 +1,5 @@
 [
   {
-    "date": "2024-11-09",
-    "torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
-    "torah_en": "Parashat Lech-Lecha"
-  },
-  {
-    "date": "2024-11-16",
-    "torah_hw": "פָּרָשַׁת וַיֵּרָא",
-    "torah_en": "Parashat Vayera"
-  },
-  {
-    "date": "2024-11-23",
-    "torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
-    "torah_en": "Parashat Chayei Sara"
-  },
-  {
-    "date": "2024-11-30",
-    "torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
-    "torah_en": "Parashat Toldot"
-  },
-  {
     "date": "2024-12-07",
     "torah_hw": "פָּרָשַׁת וַיֵּצֵא",
     "torah_en": "Parashat Vayetzei"
@@ -2213,5 +2193,2196 @@
     "date": "2028-12-30",
     "torah_hw": "פָּרָשַׁת וַיְחִי",
     "torah_en": "Parashat Vayechi"
+  },
+
+  {
+    "Date": "2029-01-06",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2029-01-13",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2029-01-20",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2029-01-27",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2029-02-03",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2029-02-10",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2029-02-17",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2029-02-24",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2029-03-03",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2029-03-10",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל־פְקוּדֵי",
+    "Torah_en": "Parashat Vayakhel-Pekudei"
+  },
+  {
+    "Date": "2029-03-17",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2029-03-24",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2029-04-14",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2029-04-21",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ־מְּצֹרָע",
+    "Torah_en": "Parashat Tazria-Metzora"
+  },
+  {
+    "Date": "2029-04-28",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת־קְדשִׁים",
+    "Torah_en": "Parashat Achrei Mot-Kedoshim"
+  },
+  {
+    "Date": "2029-05-05",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2029-05-12",
+    "Torah_hw": "פָּרָשַׁת בְּהַר־בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Behar-Bechukotai"
+  },
+  {
+    "Date": "2029-05-19",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2029-05-26",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2029-06-02",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2029-06-09",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2029-06-16",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2029-06-23",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2029-06-30",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2029-07-07",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2029-07-14",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2029-07-21",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2029-07-28",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2029-08-04",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2029-08-11",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2029-08-18",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2029-08-25",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2029-09-01",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2029-09-08",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים",
+    "Torah_en": "Parashat Nitzavim"
+  },
+  {
+    "Date": "2029-09-15",
+    "Torah_hw": "פָּרָשַׁת וַיֵּלֶךְ",
+    "Torah_en": "Parashat Vayeilech"
+  },
+  {
+    "Date": "2029-09-22",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2029-10-06",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2029-10-13",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2029-10-20",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2029-10-27",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2029-11-03",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2029-11-10",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2029-11-17",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2029-11-24",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2029-12-01",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2029-12-08",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2029-12-15",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2029-12-22",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2029-12-29",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2030-01-05",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2030-01-12",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2030-01-19",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2030-01-26",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2030-02-02",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2030-02-09",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2030-02-16",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2030-02-23",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2030-03-02",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל",
+    "Torah_en": "Parashat Vayakhel"
+  },
+  {
+    "Date": "2030-03-09",
+    "Torah_hw": "פָּרָשַׁת פְקוּדֵי",
+    "Torah_en": "Parashat Pekudei"
+  },
+  {
+    "Date": "2030-03-16",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2030-03-23",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2030-03-30",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2030-04-06",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ",
+    "Torah_en": "Parashat Tazria"
+  },
+  {
+    "Date": "2030-04-13",
+    "Torah_hw": "פָּרָשַׁת מְּצֹרָע",
+    "Torah_en": "Parashat Metzora"
+  },
+  {
+    "Date": "2030-04-27",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת",
+    "Torah_en": "Parashat Achrei Mot"
+  },
+  {
+    "Date": "2030-05-04",
+    "Torah_hw": "פָּרָשַׁת קְדשִׁים",
+    "Torah_en": "Parashat Kedoshim"
+  },
+  {
+    "Date": "2030-05-11",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2030-05-18",
+    "Torah_hw": "פָּרָשַׁת בְּהַר",
+    "Torah_en": "Parashat Behar"
+  },
+  {
+    "Date": "2030-05-25",
+    "Torah_hw": "פָּרָשַׁת בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Bechukotai"
+  },
+  {
+    "Date": "2030-06-01",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2030-06-15",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2030-06-22",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2030-06-29",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2030-07-06",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2030-07-13",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת־בָּלָק",
+    "Torah_en": "Parashat Chukat-Balak"
+  },
+  {
+    "Date": "2030-07-20",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2030-07-27",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2030-08-03",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2030-08-10",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2030-08-17",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2030-08-24",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2030-08-31",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2030-09-07",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2030-09-14",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2030-09-21",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים־וַיֵּלֶךְ",
+    "Torah_en": "Parashat Nitzavim-Vayeilech"
+  },
+  {
+    "Date": "2030-10-05",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2030-10-26",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2030-11-02",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2030-11-09",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2030-11-16",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2030-11-23",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2030-11-30",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2030-12-07",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2030-12-14",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2030-12-21",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2030-12-28",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2031-01-04",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2031-01-11",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2031-01-18",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2031-01-25",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2031-02-01",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2031-02-08",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2031-02-15",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2031-02-22",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2031-03-01",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2031-03-08",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2031-03-15",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2031-03-22",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל־פְקוּדֵי",
+    "Torah_en": "Parashat Vayakhel-Pekudei"
+  },
+  {
+    "Date": "2031-03-29",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2031-04-05",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2031-04-19",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2031-04-26",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ־מְּצֹרָע",
+    "Torah_en": "Parashat Tazria-Metzora"
+  },
+  {
+    "Date": "2031-05-03",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת־קְדשִׁים",
+    "Torah_en": "Parashat Achrei Mot-Kedoshim"
+  },
+  {
+    "Date": "2031-05-10",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2031-05-17",
+    "Torah_hw": "פָּרָשַׁת בְּהַר־בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Behar-Bechukotai"
+  },
+  {
+    "Date": "2031-05-24",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2031-05-31",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2031-06-07",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2031-06-14",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2031-06-21",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2031-06-28",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2031-07-05",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2031-07-12",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2031-07-19",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2031-07-26",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2031-08-02",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2031-08-09",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2031-08-16",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2031-08-23",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2031-08-30",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2031-09-06",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2031-09-13",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים־וַיֵּלֶךְ",
+    "Torah_en": "Parashat Nitzavim-Vayeilech"
+  },
+  {
+    "Date": "2031-09-20",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2031-10-11",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2031-10-18",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2031-10-25",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2031-11-01",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2031-11-08",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2031-11-15",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2031-11-22",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2031-11-29",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2031-12-06",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2031-12-13",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2031-12-20",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2031-12-27",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2032-01-03",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2032-01-10",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2032-01-17",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2032-01-24",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2032-01-31",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2032-02-07",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2032-02-14",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2032-02-21",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2032-02-28",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2032-03-06",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל־פְקוּדֵי",
+    "Torah_en": "Parashat Vayakhel-Pekudei"
+  },
+  {
+    "Date": "2032-03-13",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2032-03-20",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2032-04-10",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2032-04-17",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ־מְּצֹרָע",
+    "Torah_en": "Parashat Tazria-Metzora"
+  },
+  {
+    "Date": "2032-04-24",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת־קְדשִׁים",
+    "Torah_en": "Parashat Achrei Mot-Kedoshim"
+  },
+  {
+    "Date": "2032-05-01",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2032-05-08",
+    "Torah_hw": "פָּרָשַׁת בְּהַר־בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Behar-Bechukotai"
+  },
+  {
+    "Date": "2032-05-15",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2032-05-22",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2032-05-29",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2032-06-05",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2032-06-12",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2032-06-19",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2032-06-26",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2032-07-03",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2032-07-10",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2032-07-17",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2032-07-24",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2032-07-31",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2032-08-07",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2032-08-14",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2032-08-21",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2032-08-28",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2032-09-04",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים",
+    "Torah_en": "Parashat Nitzavim"
+  },
+  {
+    "Date": "2032-09-11",
+    "Torah_hw": "פָּרָשַׁת וַיֵּלֶךְ",
+    "Torah_en": "Parashat Vayeilech"
+  },
+  {
+    "Date": "2032-09-18",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2032-10-02",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2032-10-09",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2032-10-16",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2032-10-23",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2032-10-30",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2032-11-06",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2032-11-13",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2032-11-20",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2032-11-27",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2032-12-04",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2032-12-11",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2032-12-18",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2032-12-25",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2033-01-01",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2033-01-08",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2033-01-15",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2033-01-22",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2033-01-29",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2033-02-05",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2033-02-12",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2033-02-19",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2033-02-26",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל",
+    "Torah_en": "Parashat Vayakhel"
+  },
+  {
+    "Date": "2033-03-05",
+    "Torah_hw": "פָּרָשַׁת פְקוּדֵי",
+    "Torah_en": "Parashat Pekudei"
+  },
+  {
+    "Date": "2033-03-12",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2033-03-19",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2033-03-26",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2033-04-02",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ",
+    "Torah_en": "Parashat Tazria"
+  },
+  {
+    "Date": "2033-04-09",
+    "Torah_hw": "פָּרָשַׁת מְּצֹרָע",
+    "Torah_en": "Parashat Metzora"
+  },
+  {
+    "Date": "2033-04-23",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת",
+    "Torah_en": "Parashat Achrei Mot"
+  },
+  {
+    "Date": "2033-04-30",
+    "Torah_hw": "פָּרָשַׁת קְדשִׁים",
+    "Torah_en": "Parashat Kedoshim"
+  },
+  {
+    "Date": "2033-05-07",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2033-05-14",
+    "Torah_hw": "פָּרָשַׁת בְּהַר",
+    "Torah_en": "Parashat Behar"
+  },
+  {
+    "Date": "2033-05-21",
+    "Torah_hw": "פָּרָשַׁת בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Bechukotai"
+  },
+  {
+    "Date": "2033-05-28",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2033-06-11",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2033-06-18",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2033-06-25",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2033-07-02",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2033-07-09",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת־בָּלָק",
+    "Torah_en": "Parashat Chukat-Balak"
+  },
+  {
+    "Date": "2033-07-16",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2033-07-23",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2033-07-30",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2033-08-06",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2033-08-13",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2033-08-20",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2033-08-27",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2033-09-03",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2033-09-10",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2033-09-17",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים־וַיֵּלֶךְ",
+    "Torah_en": "Parashat Nitzavim-Vayeilech"
+  },
+  {
+    "Date": "2033-10-01",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2033-10-22",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2033-10-29",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2033-11-05",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2033-11-12",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2033-11-19",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2033-11-26",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2033-12-03",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2033-12-10",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2033-12-17",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2033-12-24",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2033-12-31",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2034-01-07",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2034-01-14",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2034-01-21",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2034-01-28",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2034-02-04",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2034-02-11",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2034-02-18",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2034-02-25",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2034-03-04",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2034-03-11",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2034-03-18",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל־פְקוּדֵי",
+    "Torah_en": "Parashat Vayakhel-Pekudei"
+  },
+  {
+    "Date": "2034-03-25",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2034-04-01",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2034-04-15",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2034-04-22",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ־מְּצֹרָע",
+    "Torah_en": "Parashat Tazria-Metzora"
+  },
+  {
+    "Date": "2034-04-29",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת־קְדשִׁים",
+    "Torah_en": "Parashat Achrei Mot-Kedoshim"
+  },
+  {
+    "Date": "2034-05-06",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2034-05-13",
+    "Torah_hw": "פָּרָשַׁת בְּהַר־בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Behar-Bechukotai"
+  },
+  {
+    "Date": "2034-05-20",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2034-05-27",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2034-06-03",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2034-06-10",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2034-06-17",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2034-06-24",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2034-07-01",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2034-07-08",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2034-07-15",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2034-07-22",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2034-07-29",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2034-08-05",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2034-08-12",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2034-08-19",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2034-08-26",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2034-09-02",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2034-09-09",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים־וַיֵּלֶךְ",
+    "Torah_en": "Parashat Nitzavim-Vayeilech"
+  },
+  {
+    "Date": "2034-09-16",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2034-10-07",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2034-10-14",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2034-10-21",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2034-10-28",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2034-11-04",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2034-11-11",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2034-11-18",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2034-11-25",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2034-12-02",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2034-12-09",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2034-12-16",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2034-12-23",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2034-12-30",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2035-01-06",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2035-01-13",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2035-01-20",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2035-01-27",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2035-02-03",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2035-02-10",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2035-02-17",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2035-02-24",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2035-03-03",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל",
+    "Torah_en": "Parashat Vayakhel"
+  },
+  {
+    "Date": "2035-03-10",
+    "Torah_hw": "פָּרָשַׁת פְקוּדֵי",
+    "Torah_en": "Parashat Pekudei"
+  },
+  {
+    "Date": "2035-03-17",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2035-03-24",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2035-03-31",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2035-04-07",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ",
+    "Torah_en": "Parashat Tazria"
+  },
+  {
+    "Date": "2035-04-14",
+    "Torah_hw": "פָּרָשַׁת מְּצֹרָע",
+    "Torah_en": "Parashat Metzora"
+  },
+  {
+    "Date": "2035-04-21",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת",
+    "Torah_en": "Parashat Achrei Mot"
+  },
+  {
+    "Date": "2035-05-05",
+    "Torah_hw": "פָּרָשַׁת קְדשִׁים",
+    "Torah_en": "Parashat Kedoshim"
+  },
+  {
+    "Date": "2035-05-12",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2035-05-19",
+    "Torah_hw": "פָּרָשַׁת בְּהַר",
+    "Torah_en": "Parashat Behar"
+  },
+  {
+    "Date": "2035-05-26",
+    "Torah_hw": "פָּרָשַׁת בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Bechukotai"
+  },
+  {
+    "Date": "2035-06-02",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2035-06-09",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2035-06-16",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2035-06-23",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2035-06-30",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2035-07-07",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2035-07-14",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2035-07-21",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2035-07-28",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת",
+    "Torah_en": "Parashat Matot"
+  },
+  {
+    "Date": "2035-08-04",
+    "Torah_hw": "פָּרָשַׁת מַסְעֵי",
+    "Torah_en": "Parashat Masei"
+  },
+  {
+    "Date": "2035-08-11",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2035-08-18",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2035-08-25",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2035-09-01",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2035-09-08",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2035-09-15",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2035-09-22",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2035-09-29",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים־וַיֵּלֶךְ",
+    "Torah_en": "Parashat Nitzavim-Vayeilech"
+  },
+  {
+    "Date": "2035-10-06",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2035-10-27",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2035-11-03",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2035-11-10",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2035-11-17",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2035-11-24",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2035-12-01",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2035-12-08",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2035-12-15",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2035-12-22",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2035-12-29",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2036-01-05",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2036-01-12",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2036-01-19",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2036-01-26",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2036-02-02",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2036-02-09",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2036-02-16",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2036-02-23",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2036-03-01",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2036-03-08",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2036-03-15",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2036-03-22",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל־פְקוּדֵי",
+    "Torah_en": "Parashat Vayakhel-Pekudei"
+  },
+  {
+    "Date": "2036-03-29",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2036-04-05",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2036-04-26",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2036-05-03",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ־מְּצֹרָע",
+    "Torah_en": "Parashat Tazria-Metzora"
+  },
+  {
+    "Date": "2036-05-10",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת־קְדשִׁים",
+    "Torah_en": "Parashat Achrei Mot-Kedoshim"
+  },
+  {
+    "Date": "2036-05-17",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2036-05-24",
+    "Torah_hw": "פָּרָשַׁת בְּהַר־בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Behar-Bechukotai"
+  },
+  {
+    "Date": "2036-05-31",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2036-06-07",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2036-06-14",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2036-06-21",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2036-06-28",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2036-07-05",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2036-07-12",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2036-07-19",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2036-07-26",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2036-08-02",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2036-08-09",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2036-08-16",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2036-08-23",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2036-08-30",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2036-09-06",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2036-09-13",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2036-09-20",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים",
+    "Torah_en": "Parashat Nitzavim"
+  },
+  {
+    "Date": "2036-09-27",
+    "Torah_hw": "פָּרָשַׁת וַיֵּלֶךְ",
+    "Torah_en": "Parashat Vayeilech"
+  },
+  {
+    "Date": "2036-10-04",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2036-10-18",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2036-10-25",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2036-11-01",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2036-11-08",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2036-11-15",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2036-11-22",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2036-11-29",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2036-12-06",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2036-12-13",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2036-12-20",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2036-12-27",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2037-01-03",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2037-01-10",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
+  },
+  {
+    "Date": "2037-01-17",
+    "Torah_hw": "פָּרָשַׁת וָאֵרָא",
+    "Torah_en": "Parashat Vaera"
+  },
+  {
+    "Date": "2037-01-24",
+    "Torah_hw": "פָּרָשַׁת בֹּא",
+    "Torah_en": "Parashat Bo"
+  },
+  {
+    "Date": "2037-01-31",
+    "Torah_hw": "פָּרָשַׁת בְּשַׁלַּח",
+    "Torah_en": "Parashat Beshalach"
+  },
+  {
+    "Date": "2037-02-07",
+    "Torah_hw": "פָּרָשַׁת יִתְרוֹ",
+    "Torah_en": "Parashat Yitro"
+  },
+  {
+    "Date": "2037-02-14",
+    "Torah_hw": "פָּרָשַׁת מִּשְׁפָּטִים",
+    "Torah_en": "Parashat Mishpatim"
+  },
+  {
+    "Date": "2037-02-21",
+    "Torah_hw": "פָּרָשַׁת תְּרוּמָה",
+    "Torah_en": "Parashat Terumah"
+  },
+  {
+    "Date": "2037-02-28",
+    "Torah_hw": "פָּרָשַׁת תְּצַוֶּה",
+    "Torah_en": "Parashat Tetzaveh"
+  },
+  {
+    "Date": "2037-03-07",
+    "Torah_hw": "פָּרָשַׁת כִּי תִשָּׂא",
+    "Torah_en": "Parashat Ki Tisa"
+  },
+  {
+    "Date": "2037-03-14",
+    "Torah_hw": "פָּרָשַׁת וַיַּקְהֵל־פְקוּדֵי",
+    "Torah_en": "Parashat Vayakhel-Pekudei"
+  },
+  {
+    "Date": "2037-03-21",
+    "Torah_hw": "פָּרָשַׁת וַיִּקְרָא",
+    "Torah_en": "Parashat Vayikra"
+  },
+  {
+    "Date": "2037-03-28",
+    "Torah_hw": "פָּרָשַׁת צַו",
+    "Torah_en": "Parashat Tzav"
+  },
+  {
+    "Date": "2037-04-11",
+    "Torah_hw": "פָּרָשַׁת שְּׁמִינִי",
+    "Torah_en": "Parashat Shmini"
+  },
+  {
+    "Date": "2037-04-18",
+    "Torah_hw": "פָּרָשַׁת תַזְרִיעַ־מְּצֹרָע",
+    "Torah_en": "Parashat Tazria-Metzora"
+  },
+  {
+    "Date": "2037-04-25",
+    "Torah_hw": "פָּרָשַׁת אַחֲרֵי מוֹת־קְדשִׁים",
+    "Torah_en": "Parashat Achrei Mot-Kedoshim"
+  },
+  {
+    "Date": "2037-05-02",
+    "Torah_hw": "פָּרָשַׁת אֱמוֹר",
+    "Torah_en": "Parashat Emor"
+  },
+  {
+    "Date": "2037-05-09",
+    "Torah_hw": "פָּרָשַׁת בְּהַר־בְּחֻקֹּתַי",
+    "Torah_en": "Parashat Behar-Bechukotai"
+  },
+  {
+    "Date": "2037-05-16",
+    "Torah_hw": "פָּרָשַׁת בְּמִדְבַּר",
+    "Torah_en": "Parashat Bamidbar"
+  },
+  {
+    "Date": "2037-05-23",
+    "Torah_hw": "פָּרָשַׁת נָשׂא",
+    "Torah_en": "Parashat Nasso"
+  },
+  {
+    "Date": "2037-05-30",
+    "Torah_hw": "פָּרָשַׁת בְּהַעֲלֹתְךָ",
+    "Torah_en": "Parashat Beha‚Äôalotcha"
+  },
+  {
+    "Date": "2037-06-06",
+    "Torah_hw": "פָּרָשַׁת שְׁלַח־לְךָ",
+    "Torah_en": "Parashat Sh‚Äôlach"
+  },
+  {
+    "Date": "2037-06-13",
+    "Torah_hw": "פָּרָשַׁת קוֹרַח",
+    "Torah_en": "Parashat Korach"
+  },
+  {
+    "Date": "2037-06-20",
+    "Torah_hw": "פָּרָשַׁת חֻקַּת",
+    "Torah_en": "Parashat Chukat"
+  },
+  {
+    "Date": "2037-06-27",
+    "Torah_hw": "פָּרָשַׁת בָּלָק",
+    "Torah_en": "Parashat Balak"
+  },
+  {
+    "Date": "2037-07-04",
+    "Torah_hw": "פָּרָשַׁת פִּינְחָס",
+    "Torah_en": "Parashat Pinchas"
+  },
+  {
+    "Date": "2037-07-11",
+    "Torah_hw": "פָּרָשַׁת מַּטּוֹת־מַסְעֵי",
+    "Torah_en": "Parashat Matot-Masei"
+  },
+  {
+    "Date": "2037-07-18",
+    "Torah_hw": "פָּרָשַׁת דְּבָרִים",
+    "Torah_en": "Parashat Devarim"
+  },
+  {
+    "Date": "2037-07-25",
+    "Torah_hw": "פָּרָשַׁת וָאֶתְחַנַּן",
+    "Torah_en": "Parashat Vaetchanan"
+  },
+  {
+    "Date": "2037-08-01",
+    "Torah_hw": "פָּרָשַׁת עֵקֶב",
+    "Torah_en": "Parashat Eikev"
+  },
+  {
+    "Date": "2037-08-08",
+    "Torah_hw": "פָּרָשַׁת רְאֵה",
+    "Torah_en": "Parashat Re‚Äôeh"
+  },
+  {
+    "Date": "2037-08-15",
+    "Torah_hw": "פָּרָשַׁת שׁוֹפְטִים",
+    "Torah_en": "Parashat Shoftim"
+  },
+  {
+    "Date": "2037-08-22",
+    "Torah_hw": "פָּרָשַׁת כִּי־תֵצֵא",
+    "Torah_en": "Parashat Ki Teitzei"
+  },
+  {
+    "Date": "2037-08-29",
+    "Torah_hw": "פָּרָשַׁת כִּי־תָבוֹא",
+    "Torah_en": "Parashat Ki Tavo"
+  },
+  {
+    "Date": "2037-09-05",
+    "Torah_hw": "פָּרָשַׁת נִצָּבִים־וַיֵּלֶךְ",
+    "Torah_en": "Parashat Nitzavim-Vayeilech"
+  },
+  {
+    "Date": "2037-09-12",
+    "Torah_hw": "פָּרָשַׁת הַאֲזִינוּ",
+    "Torah_en": "Parashat Ha‚Äôazinu"
+  },
+  {
+    "Date": "2037-10-03",
+    "Torah_hw": "פָּרָשַׁת בְּרֵאשִׁית",
+    "Torah_en": "Parashat Bereshit"
+  },
+  {
+    "Date": "2037-10-10",
+    "Torah_hw": "פָּרָשַׁת נֹחַ",
+    "Torah_en": "Parashat Noach"
+  },
+  {
+    "Date": "2037-10-17",
+    "Torah_hw": "פָּרָשַׁת לֶךְ־לְךָ",
+    "Torah_en": "Parashat Lech-Lecha"
+  },
+  {
+    "Date": "2037-10-24",
+    "Torah_hw": "פָּרָשַׁת וַיֵּרָא",
+    "Torah_en": "Parashat Vayera"
+  },
+  {
+    "Date": "2037-10-31",
+    "Torah_hw": "פָּרָשַׁת חַיֵּי שָֹרָה",
+    "Torah_en": "Parashat Chayei Sara"
+  },
+  {
+    "Date": "2037-11-07",
+    "Torah_hw": "פָּרָשַׁת תּוֹלְדוֹת",
+    "Torah_en": "Parashat Toldot"
+  },
+  {
+    "Date": "2037-11-14",
+    "Torah_hw": "פָּרָשַׁת וַיֵּצֵא",
+    "Torah_en": "Parashat Vayetzei"
+  },
+  {
+    "Date": "2037-11-21",
+    "Torah_hw": "פָּרָשַׁת וַיִּשְׁלַח",
+    "Torah_en": "Parashat Vayishlach"
+  },
+  {
+    "Date": "2037-11-28",
+    "Torah_hw": "פָּרָשַׁת וַיֵּשֶׁב",
+    "Torah_en": "Parashat Vayeshev"
+  },
+  {
+    "Date": "2037-12-05",
+    "Torah_hw": "פָּרָשַׁת מִקֵּץ",
+    "Torah_en": "Parashat Miketz"
+  },
+  {
+    "Date": "2037-12-12",
+    "Torah_hw": "פָּרָשַׁת וַיִּגַּשׁ",
+    "Torah_en": "Parashat Vayigash"
+  },
+  {
+    "Date": "2037-12-19",
+    "Torah_hw": "פָּרָשַׁת וַיְחִי",
+    "Torah_en": "Parashat Vayechi"
+  },
+  {
+    "Date": "2037-12-26",
+    "Torah_hw": "פָּרָשַׁת שְׁמוֹת",
+    "Torah_en": "Parashat Shemot"
   }
 ]

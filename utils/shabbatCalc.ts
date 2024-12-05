@@ -1,8 +1,11 @@
 import { getTorahPortion } from '@/utils/torahUtils';
 import { formatDate, adjustMinutes , getNextYearFridaysAndSaturdays, format} from './dateUtils';
 import SunCalc from "suncalc";
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
+const LOCATION_KEY = "location";
 export const calculateShabbatTimes = async (latitude: number, longitude: number, locationName: string) => {
+  const cachedLocation = await AsyncStorage.getItem(LOCATION_KEY);
+  console.log("calculateShabbatTimes for location: ", cachedLocation)
   const { fridays, saturdays } = getNextYearFridaysAndSaturdays();
 
   const shabbatTimes = fridays.map((friday, index) => {
