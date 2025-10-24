@@ -3,15 +3,7 @@ import { fetchUserLocation } from "@/utils/locationUtils";
 import { calculateShabbatTimes } from "@/utils/shabbatCalc";
 import { ShabbatTime } from "@/utils/types";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import NetInfo from "@react-native-community/netinfo";
-import {
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  Text,
-  Dimensions,
-  ImageBackground,
-} from "react-native";
+import { View, StyleSheet, Text, ImageBackground } from "react-native";
 import {
   Button,
   Menu,
@@ -24,7 +16,6 @@ import TitleCard from "@/components/TitleCard";
 import AlarmModal from "@/components/AlarmModal";
 import EventModal from "@/components/EventModal";
 import LanguageModal from "@/components/LanguageModal";
-import { Audio } from "expo-av";
 import Parasha from "@/components/Parasha";
 import PopupReminder from "@/components/PopupReminder";
 import { useEvents } from "@/context/EventsContext";
@@ -34,14 +25,12 @@ import {
   BackgroundModal,
   backgroundOptions,
   BACKGROUND_KEY,
-  CUSTOM_IMAGE_KEY,
 } from "@/components/BackgroundModal";
 
 const SHABBAT_TIMES_KEY = "shabbatTimes";
 const SHABBAT_TIMES_EXPIRY = 2; // 2 days
 const LOCATION_KEY = "location";
 // Define sounds with proper require statements
-
 
 const HomeScreen = () => {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -61,9 +50,6 @@ const HomeScreen = () => {
     useState<BackgroundOption>(backgroundOptions[0]);
   const [showBackgroundModal, setShowBackgroundModal] = useState(false);
   const [locationFetched, setLocationFetched] = useState(false); // Track if location is fetched
-  const [long, setLong] = useState(0);
-  const [lat, setLat] = useState(0);
-  const [cityN, setCityN] = useState("");
 
   //background
   const handleBackgroundSelect = async (background: BackgroundOption) => {
@@ -87,6 +73,7 @@ const HomeScreen = () => {
     setLanguage(language === "en" ? "he" : "en");
   };
   useEffect(() => {
+    clearStorage(SHABBAT_TIMES_KEY)
     const fetchShabbatTimes = async () => {
       setLocationFetched(false);
       try {
@@ -109,7 +96,7 @@ const HomeScreen = () => {
           // Skip using cached data if latitude or longitude is invalid
           if (latitude <= 1 || longitude <= 1) {
             console.log("Invalid cached location data. Clearing storage...");
-            
+
             await clearStorage(SHABBAT_TIMES_KEY);
           } else if (cachedShabbatTimes) {
             const { data, timestamp } = JSON.parse(cachedShabbatTimes);
@@ -137,15 +124,12 @@ const HomeScreen = () => {
         }
 
         // }
+        let latitude, longitude, city;
         // Only fetch location once
-        if (!locationFetched || lat < 1 || long < 1) {
-          console.log("fetching location: ", locationFetched, " lat : ", lat, "long: ", long)
+        if (!locationFetched ) {
           clearStorage(SHABBAT_TIMES_KEY);
           setLocationFetched(true); // Set flag to true once location is fetched
-          const { latitude, longitude, city } = await fetchUserLocation();
-          setLat(latitude);
-          setLong(longitude);
-          setCityN(city);
+          ({ latitude, longitude, city } = await fetchUserLocation());
           await AsyncStorage.setItem(
             LOCATION_KEY,
             JSON.stringify({
@@ -154,7 +138,7 @@ const HomeScreen = () => {
             })
           );
         }
-        const shabbatTimes = await calculateShabbatTimes(lat, long, cityN);
+        const shabbatTimes = await calculateShabbatTimes(latitude, longitude, city);
         // Find the next Shabbat, including today if it's Friday or Saturday
         const nextShabbat =
           shabbatTimes?.find((time: { date: string | number | Date }) => {
