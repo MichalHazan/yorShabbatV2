@@ -34,7 +34,13 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-router", "expo-av", "expo-notifications"],
+    "plugins": [
+      "expo-router",
+      "expo-av",
+      "expo-notifications",
+      "expo-audio",
+      "expo-video"
+    ],
     "experiments": {
       "typedRoutes": true
     },

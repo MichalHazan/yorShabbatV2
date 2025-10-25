@@ -26,6 +26,7 @@ import {
   backgroundOptions,
   BACKGROUND_KEY,
 } from "@/components/BackgroundModal";
+import MenuWithLabel from "@/components/MenuWithLabel";
 
 const SHABBAT_TIMES_KEY = "shabbatTimes";
 const SHABBAT_TIMES_EXPIRY = 2; // 2 days
@@ -54,12 +55,19 @@ const HomeScreen = () => {
   //background
   const handleBackgroundSelect = async (background: BackgroundOption) => {
     try {
+      // Save new background
       await AsyncStorage.setItem(BACKGROUND_KEY, JSON.stringify(background));
-      setSelectedBackground(background);
+  
+      // Force React to update (new object reference)
+      setSelectedBackground({ ...background });
+  
+      // Optional: log for debug
+      console.log("✅ Background updated:", background.name);
     } catch (error) {
       console.error("Error saving background preference:", error);
     }
   };
+  
 
   const clearStorage = async (key) => {
     try {
@@ -73,7 +81,7 @@ const HomeScreen = () => {
     setLanguage(language === "en" ? "he" : "en");
   };
   useEffect(() => {
-    clearStorage(SHABBAT_TIMES_KEY)
+    clearStorage(SHABBAT_TIMES_KEY);
     const fetchShabbatTimes = async () => {
       setLocationFetched(false);
       try {
@@ -126,7 +134,7 @@ const HomeScreen = () => {
         // }
         let latitude, longitude, city;
         // Only fetch location once
-        if (!locationFetched ) {
+        if (!locationFetched) {
           clearStorage(SHABBAT_TIMES_KEY);
           setLocationFetched(true); // Set flag to true once location is fetched
           ({ latitude, longitude, city } = await fetchUserLocation());
@@ -138,7 +146,11 @@ const HomeScreen = () => {
             })
           );
         }
-        const shabbatTimes = await calculateShabbatTimes(latitude, longitude, city);
+        const shabbatTimes = await calculateShabbatTimes(
+          latitude,
+          longitude,
+          city
+        );
         // Find the next Shabbat, including today if it's Friday or Saturday
         const nextShabbat =
           shabbatTimes?.find((time: { date: string | number | Date }) => {
@@ -195,7 +207,6 @@ const HomeScreen = () => {
   }, [events]);
 
   const handleMenuItemPress = (option: string) => {
-    setVisible(false);
     switch (option) {
       case "Add Alert":
         setShowAlarmModal(true);
@@ -206,14 +217,19 @@ const HomeScreen = () => {
       case "Change Language":
         handleLanguageChange();
         break;
+      case "Change Background":
+        setShowBackgroundModal(true);  // ✅ open background selector
+        break;
       default:
         break;
     }
   };
+  
 
   return (
     <PaperProvider>
       <ImageBackground
+      key={selectedBackground.id} 
         source={
           selectedBackground.type === "custom"
             ? { uri: selectedBackground.value }
@@ -228,38 +244,8 @@ const HomeScreen = () => {
             <PopupReminder />
           </View>
           {/* Menu positioned absolutely in top-right corner */}
-          <View style={styles.menuContainer}>
-            <Menu
-              visible={visible}
-              onDismiss={() => setVisible(false)}
-              anchor={
-                <IconButton
-                  icon="menu"
-                  size={30}
-                  onPress={() => setVisible(true)}
-                />
-              }
-            >
-              <Menu.Item
-                onPress={() => handleMenuItemPress("Add Alert")}
-                title={language === "en" ? "Add alert" : "הוסף התראה"}
-              />
-              <Menu.Item
-                onPress={() => handleMenuItemPress("Add Event")}
-                title={language === "en" ? "Add Event" : "הוסף אירוע"}
-              />
-              <Menu.Item
-                onPress={() => handleMenuItemPress("Change Language")}
-                title={language === "en" ? "Hebrew" : "אנגלית"}
-              />
-              <Menu.Item
-                onPress={() => {
-                  setVisible(false);
-                  setShowBackgroundModal(true);
-                }}
-                title={language === "en" ? "Change Background" : "שנה רקע"}
-              />
-            </Menu>
+          <View style={{ alignItems: "flex-end" }}>
+            <MenuWithLabel language={language} onSelect={handleMenuItemPress} />
           </View>
 
           {/* Main content */}
@@ -360,6 +346,15 @@ const styles = StyleSheet.create({
   },
   eventText: {
     fontSize: 20,
+  },
+  menuAnchor: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  menuText: {
+    fontSize: 18,
+    color: "black",
+    marginRight: 8,
   },
 });
 

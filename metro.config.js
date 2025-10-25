@@ -1,11 +1,11 @@
 // metro.config.js
-const { getDefaultConfig } = require('expo/metro-config');
+const { getDefaultConfig } = require('@expo/metro-config');
 
-const defaultConfig = getDefaultConfig(__dirname);
+const config = getDefaultConfig(__dirname);
 
-// Add any custom configurations here if needed
-defaultConfig.resolver.sourceExts = [
-  ...defaultConfig.resolver.sourceExts,
+// Optional: extend source extensions if you really need to
+config.resolver.sourceExts = [
+  ...config.resolver.sourceExts,
   'jsx',
   'js',
   'ts',
@@ -13,4 +13,4 @@ defaultConfig.resolver.sourceExts = [
   'json'
 ];
 
-module.exports = defaultConfig;
+module.exports = config;
