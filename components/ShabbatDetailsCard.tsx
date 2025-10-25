@@ -34,7 +34,7 @@ const ShabbatDetailsCard = ({
           year: "2-digit",
         });
   const heDay = `יום ${
-    ["א'", "ב'", "ג'", "ד'", "ה'", "ו'", "ש'"][today.getDay()]
+    ["ראשון", "שני", "שלישי'", "רביעי", "חמישי'", "שישי", "שבת"][today.getDay()]
   }`;
 
   const isShabbatPeriod = () => {
