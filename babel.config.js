@@ -13,7 +13,8 @@ module.exports = function(api) {
             '@screens': './screens',
             '@utils': './utils',
             '@assets': './assets',
-          }
+          },
+          extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".mp3"],
         }
       ]
     ]

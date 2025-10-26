@@ -6,6 +6,33 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Picker } from "@react-native-picker/picker";
 import { ShabbatTime } from "@/utils/types";
 import { LanguageContext } from "@/context/LanguageContext";
+import sound1 from "@/assets/sounds/אשת חיל- סגנון אלרם.mp3";
+import sound2 from "@/assets/sounds/אשת חיל- סגנון בארי.mp3";
+import sound3 from "@/assets/sounds/אשת חיל- סגנון בניהו.mp3";
+import sound4 from "@/assets/sounds/אשת חיל- סגנון טוהר.mp3";
+import sound5 from "@/assets/sounds/אשת חיל- סגנון יהלי.mp3";
+import sound6 from "@/assets/sounds/אשת חיל- סגנון ירין.mp3";
+import sound7 from "@/assets/sounds/אשת חיל- סגנון רומי.mp3";
+import sound8 from "@/assets/sounds/אשת חיל- סגנון תאיר.mp3";
+import sound9 from "@/assets/sounds/כי אשמרה- סגנון איילה.mp3";
+import sound10 from "@/assets/sounds/כי אשמרה- סגנון אסתר.mp3";
+import sound11 from "@/assets/sounds/כי אשמרה- סגנון קורל.mp3";
+import sound12 from "@/assets/sounds/כי אשמרה-סגנון חסדיה.mp3";
+import sound13 from "@/assets/sounds/כי אשמרה-סגנון ליה.mp3";
+import sound14 from "@/assets/sounds/לכה דודי- סגנון אורי.mp3";
+import sound15 from "@/assets/sounds/לכה דודי- סגנון אריאל.mp3";
+import sound16 from "@/assets/sounds/לְכָה דוֹדִי- סגנון חסדיה.mp3";
+import sound17 from "@/assets/sounds/לכה דודי- סגנון לינוי.mp3";
+import sound18 from "@/assets/sounds/שלום עליכם- סגנון גאיה.mp3";
+import sound19 from "@/assets/sounds/שלום עליכם- סגנון דריה.mp3";
+import sound20 from "@/assets/sounds/שלום עליכם- סגנון הדר.mp3";
+import sound21 from "@/assets/sounds/שלום עליכם- סגנון יובל.mp3";
+import sound22 from "@/assets/sounds/שלום עליכם- סגנון לביא.mp3";
+import sound23 from "@/assets/sounds/שלום עליכם- סגנון נווה.mp3";
+import sound24 from "@/assets/sounds/שלום עליכם- סגנון רואי.mp3";
+import sound25 from "@/assets/sounds/שלום עליכם-סגנון אייחל.mp3";
+import sound26 from "@/assets/sounds/שלום עליכם-סגנון שירה.mp3";
+
 
 type AlarmModalProps = {
   visible: boolean;
@@ -15,33 +42,34 @@ type AlarmModalProps = {
 
 // Define sounds with proper require statements
 const sounds = [
-  { id: 1, name: "אשת חיל- סגנון אלרם", value: require("@/assets/sounds/אשת חיל- סגנון אלרם.mp3") },
-  { id: 2, name: "אשת חיל- סגנון בארי", value: require("@/assets/sounds/אשת חיל- סגנון בארי.mp3") },
-  { id: 3, name: "אשת חיל- סגנון בניהו", value: require("@/assets/sounds/אשת חיל- סגנון בניהו.mp3") },
-  { id: 4, name: "אשת חיל- סגנון טוהר", value: require("@/assets/sounds/אשת חיל- סגנון טוהר.mp3") },
-  { id: 5, name: "אשת חיל- סגנון יהלי", value: require("@/assets/sounds/אשת חיל- סגנון יהלי.mp3") },
-  { id: 6, name: "אשת חיל- סגנון ירין", value: require("@/assets/sounds/אשת חיל- סגנון ירין.mp3") },
-  { id: 7, name: "אשת חיל- סגנון רומי", value: require("@/assets/sounds/אשת חיל- סגנון רומי.mp3") },
-  { id: 8, name: "אשת חיל- סגנון תאיר", value: require("@/assets/sounds/אשת חיל- סגנון תאיר.mp3") },
-  { id: 9, name: "כי אשמרה- סגנון איילה", value: require("@/assets/sounds/כי אשמרה- סגנון איילה.mp3") },
-  { id: 10, name: "כי אשמרה- סגנון אסתר", value: require("@/assets/sounds/כי אשמרה- סגנון אסתר.mp3") },
-  { id: 11, name: "כי אשמרה- סגנון קורל", value: require("@/assets/sounds/כי אשמרה- סגנון קורל.mp3") },
-  { id: 12, name: "כי אשמרה-סגנון חסדיה", value: require("@/assets/sounds/כי אשמרה-סגנון חסדיה.mp3") },
-  { id: 13, name: "כי אשמרה-סגנון ליה", value: require("@/assets/sounds/כי אשמרה-סגנון ליה.mp3") },
-  { id: 14, name: "לכה דודי- סגנון אורי", value: require("@/assets/sounds/לכה דודי- סגנון אורי.mp3") },
-  { id: 15, name: "לכה דודי- סגנון אריאל", value: require("@/assets/sounds/לכה דודי- סגנון אריאל.mp3") },
-  { id: 16, name: "לְכָה דוֹדִי- סגנון חסדיה", value: require("@/assets/sounds/לְכָה דוֹדִי- סגנון חסדיה.mp3") },
-  { id: 17, name: "לכה דודי- סגנון לינוי", value: require("@/assets/sounds/לכה דודי- סגנון לינוי.mp3") },
-  { id: 18, name: "שלום עליכם- סגנון גאיה", value: require("@/assets/sounds/שלום עליכם- סגנון גאיה.mp3") },
-  { id: 19, name: "שלום עליכם- סגנון דריה", value: require("@/assets/sounds/שלום עליכם- סגנון דריה.mp3") },
-  { id: 20, name: "שלום עליכם- סגנון הדר", value: require("@/assets/sounds/שלום עליכם- סגנון הדר.mp3") },
-  { id: 21, name: "שלום עליכם- סגנון יובל", value: require("@/assets/sounds/שלום עליכם- סגנון יובל.mp3") },
-  { id: 22, name: "שלום עליכם- סגנון לביא", value: require("@/assets/sounds/שלום עליכם- סגנון לביא.mp3") },
-  { id: 23, name: "שלום עליכם- סגנון נווה", value: require("@/assets/sounds/שלום עליכם- סגנון נווה.mp3") },
-  { id: 24, name: "שלום עליכם- סגנון רואי", value: require("@/assets/sounds/שלום עליכם- סגנון רואי.mp3") },
-  { id: 25, name: "שלום עליכם-סגנון אייחל", value: require("@/assets/sounds/שלום עליכם-סגנון אייחל.mp3") },
-  { id: 26, name: "שלום עליכם-סגנון שירה", value: require("@/assets/sounds/שלום עליכם-סגנון שירה.mp3") },
+  { id: 1, name: "אשת חיל- סגנון אלרם", value: sound1 },
+  { id: 2, name: "אשת חיל- סגנון בארי", value: sound2 },
+  { id: 3, name: "אשת חיל- סגנון בניהו", value: sound3 },
+  { id: 4, name: "אשת חיל- סגנון טוהר", value: sound4 },
+  { id: 5, name: "אשת חיל- סגנון יהלי", value: sound5 },
+  { id: 6, name: "אשת חיל- סגנון ירין", value: sound6 },
+  { id: 7, name: "אשת חיל- סגנון רומי", value: sound7 },
+  { id: 8, name: "אשת חיל- סגנון תאיר", value: sound8 },
+  { id: 9, name: "כי אשמרה- סגנון איילה", value: sound9 },
+  { id: 10, name: "כי אשמרה- סגנון אסתר", value: sound10 },
+  { id: 11, name: "כי אשמרה- סגנון קורל", value: sound11 },
+  { id: 12, name: "כי אשמרה-סגנון חסדיה", value: sound12 },
+  { id: 13, name: "כי אשמרה-סגנון ליה", value: sound13 },
+  { id: 14, name: "לכה דודי- סגנון אורי", value: sound14 },
+  { id: 15, name: "לכה דודי- סגנון אריאל", value: sound15 },
+  { id: 16, name: "לְכָה דוֹדִי- סגנון חסדיה", value: sound16 },
+  { id: 17, name: "לכה דודי- סגנון לינוי", value: sound17 },
+  { id: 18, name: "שלום עליכם- סגנון גאיה", value: sound18 },
+  { id: 19, name: "שלום עליכם- סגנון דריה", value: sound19 },
+  { id: 20, name: "שלום עליכם- סגנון הדר", value: sound20 },
+  { id: 21, name: "שלום עליכם- סגנון יובל", value: sound21 },
+  { id: 22, name: "שלום עליכם- סגנון לביא", value: sound22 },
+  { id: 23, name: "שלום עליכם- סגנון נווה", value: sound23 },
+  { id: 24, name: "שלום עליכם- סגנון רואי", value: sound24 },
+  { id: 25, name: "שלום עליכם-סגנון אייחל", value: sound25 },
+  { id: 26, name: "שלום עליכם-סגנון שירה", value: sound26 },
 ];
+
 
 const AlarmModal: React.FC<AlarmModalProps> = ({
   visible,
